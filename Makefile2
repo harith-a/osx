@@ -1,0 +1,4 @@
+
+all:
+	gcc -Wall -pedantic -Wno-format englishpresent.c -o present.out
+

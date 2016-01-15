@@ -1,0 +1,317 @@
+-------- Start FFDC ------s
+FFDC.CWNAN.20150623.122854.192.dmp
+Product      :- Really Small Message Broker
+Version      :- 1.3.0.2
+Build        :- May 24 2015 09:51:12
+Features     :- bridge MQTTS 
+Pointer size :- 8 bytes
+Date/Time    :- Tue Jun 23 12:28:54 2015
+
+Reason       :- Some memory not freed at shutdown, possible memory leak
+
+=========== Start of stack trace ==========
+main (260)
+=========== End of stack trace ==========
+
+Heap scan start, total 6960 bytes
+Heap element size 48, line 246, file Tree.c, ptr 0x9eb710
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0x9eb8e0
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0x9eccd0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9ee210
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0x9f1fb0
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0x9f2830
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0x9f3280
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0x9f3310
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0x9f35f0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9f3990
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0x9f8e70
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0x9faab0
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0x9fad90
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0x9fb910
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9fc1b0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9fc2c0
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0x9fc380
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9fc4a0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9fc530
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0x9fc5c0
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0x9fc870
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0x9fe770
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xa02800
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa05a10
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa05b20
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa05b50
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa05c70
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa05d00
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa05d90
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa081c0
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa09a50
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0c480
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0c590
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa0c5c0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0c6e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0c770
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0c800
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0c890
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0f5a0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0f6b0
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa0f6e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0f800
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0f890
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0f920
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa0f9b0
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa12580
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa12c10
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa1a6e0
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa1e030
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa24550
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa24660
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa24690
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa247b0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa24840
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa248d0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa24960
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2be80
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2bf90
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa2bfc0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2c0e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2c170
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2c200
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2c290
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2f7d0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2f8e0
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa2f910
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2fa30
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2fac0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2fb50
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa2fbe0
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xa3d2b0
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xa3e310
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xa4d8b0
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa4e940
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xa51a30
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa53b20
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa5eda0
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa5fe00
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa60f40
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xa63800
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa64060
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa6f160
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa704a0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa705b0
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa705e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa70700
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa70790
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa70820
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa708b0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa71500
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa71610
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa71640
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa71760
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa717f0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa71880
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa71910
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa732e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa80aa0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa80bb0
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa80be0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa80d00
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa80d90
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa80e20
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa80eb0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa84c20
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa84d30
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa84d60
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa84e80
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa84f10
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa84fa0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa85030
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xa85170
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xa928c0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa96ab0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa96bc0
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xa96bf0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa96d10
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa96da0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa96e30
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xa96ec0
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xaa0b80
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xaa4c90
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xab5b60
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xabac50
+  Content           
+Heap element size 32, line 330, file MQTTSPacket.c, ptr 0xabf600
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xac25b0
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xacbab0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xad3ef0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xad4000
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xad4030
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xad4150
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xad41e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xad4270
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xad4300
+  Content           
+Heap element size 16, line 396, file MQTTSProtocol.c, ptr 0xadc740
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaee080
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaee190
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xaee1c0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaee2e0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaee370
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaee400
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaee490
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaf2970
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaf2a80
+  Content           
+Heap element size 176, line 373, file MQTTSProtocol.c, ptr 0xaf2ab0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaf2bd0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaf2c60
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaf2cf0
+  Content           
+Heap element size 32, line 50, file LinkedList.c, ptr 0xaf2d80
+  Content           
+Heap element size 48, line 246, file Tree.c, ptr 0xaf71e0
+  Content           
+Heap scan end
